@@ -47,7 +47,7 @@ li.register a:hover,.navbar-default .navbar-nav > li > a:hover, .navbar-default 
 }
 
 .jumbotron{
-    background:url(../images/waterdrop.jpg) no-repeat 50% 0;
+    background:url(waterdrop.jpg) no-repeat 50% 0;
     height:350px;
     padding:0;
 	border-radius:2%;
