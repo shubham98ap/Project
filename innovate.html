@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TheEnggway</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Your custom styles -->
+        <link href="css/custom.css" rel="stylesheet">
+
+        <!--Include JQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap JavaScript -->
+        <script src="js/bootstrap.js"></script>
+		<link rel="shortcut icon" href="bgc4.png" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="top-bar"></div>
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">  <img class="logo" src="images/logo.png" alt="TheEnggway" /></a>
+                </div><!-- /.navbar-header -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Innovate<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="innovate.html">Learn</a></li>
+                                <li><a href="innovate.html">Create</a></li>
+                                <li><a href="innovate.html">Teach</a></li>        
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!-- Right side of navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search Our Site...">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <li class="login"  data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
+                        <li class="register"  data-toggle="modal" data-target="#regModal"><a href="#">Register</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+        </nav>
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="loginModalLabel">Login Form</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+        <!-- Register Modal -->
+        <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="regModalLabel">Register</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Confirm Password">
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div class="container">   
+            <div class="row pad-top-30">
+                <div class="inner-page col-md-8">
+                    <div id="innovate" class="well">
+                        <h3>Innovate</h3>
+                        <!-- Carousel -->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/slide_learn.jpg" alt="Learn">
+                                    <div class="carousel-caption">
+                                        Learn Web Technologies
+                                    </div>
+                                </div>
+                                
+                                 <div class="item">
+                                    <img src="images/slide_create.jpg" alt="Create">
+                                    <div class="carousel-caption">
+                                        Create Web Masterpieces
+                                    </div>
+                                </div>
+                                
+                                 <div class="item">
+                                    <img src="images/slide_teach.jpg" alt="Teach">
+                                    <div class="carousel-caption">
+                                       Share Your Knowledge
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                        <center><h3>Learn</h3></center>
+                        <div class="pull-left">
+                            <img src="images/redcheck.jpg" alt="check" />
+                        </div>
+                        <p>Learning is the process of acquiring new or modifying existing knowledge, behaviors, skills, values, or preferences.The ability to learn is possessed by humans, animals, and some machines, and there is also evidence for some kind of learning in some plants.Some learning is immediate, induced by a single event (e.g. being burned by a hot stove), but much skill and knowledge accumulates from repeated experiences.</p>
+                        <hr>
+                        <center><h3>Create</h3></center>
+                        <div class="pull-left">
+                            <img src="images/bluecheck.jpg" alt="check" />
+                        </div>
+                        <p>Creativity is a phenomenon whereby something new and somehow valuable is formed. The created item may be intangible (such as an idea, a scientific theory, a musical composition, or a joke) or a physical object (such as an invention, a literary work, or a painting).C R E A T E C R E A T E C R E A T E C R E A T E C R E A T EC R E A T EC R E A T EC R E A T E C R E A T E v C R E A T E C R E A T E C R E A T E v C R E A T E </p>
+                        <hr>
+                        <center><h3>Teach</h3></center>
+                        <div class="pull-left">
+                            <img src="images/redcheck.jpg" alt="check" />
+                        </div>
+                        <p>A teacher (also called a school teacher or, in some contexts, an educator) is a person who helps others to acquire knowledge, competences or values.
+
+Informally the role of teacher may be taken on by anyone (e.g. when showing a colleague how to perform a specific task). In some countries, teaching young people of school age may be carried out in an informal setting, such as within the family (homeschooling), rather than in a formal setting such as a school or college. Some other professions may involve a significant amount of teaching (e.g. youth worker, pastor).</p>            
+                    </div>
+                </div><!-- /. col-md-8 -->
+
+                <!-- Sidebar -->
+                <div class="col-md-4"> 
+                    <div class="well greywell">
+                        <h3>Quick Contact</h3>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Message</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-default">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="list-group list-group">
+                        <a href="index.html" class="list-group-item">Home</a>
+                        <a href="about.html" class="list-group-item">About</a>
+                        <a href="innovate.html" class="list-group-item active">Innovate</a>
+                        <a href="blog.html" class="list-group-item">Blog</a>
+                        <a href="contact.html" class="list-group-item">Contact Us</a>
+                    </div><!-- /. list-group -->
+                </div><!-- /. col-md-4 -->           
+            </div> <!-- /row -->  
+        </div> <!-- /container -->
+        <footer>
+             Copyright &copy; 2018,TheEnggway
+        </footer>
+    </body>
+</html>
